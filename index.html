@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LETTER FOR WABI CUTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
         html,body {
@@ -46,7 +49,7 @@
             border-radius: 20px;
             color: #FF5F9E;
             letter-spacing: 2px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Tilt Warp', cursive;
         }
         button:hover {
             background-color: transparent;
@@ -79,6 +82,7 @@
         }
 
         #Vmessage {
+            font-family: 'Tilt Warp', cursive;
             visibility: hidden;
         }
 
@@ -123,7 +127,11 @@
             document.getElementById("env").src=a;
             document.getElementById("Vmessage").style.visibility="visible";
             document.getElementById("open").style.visibility="hidden";
-	    window.location.href="letter.html";
+            
+        }
+
+        function view(){
+            window.location.href="letter.html";
         }
 
     </script>
