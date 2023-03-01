@@ -79,6 +79,27 @@
             font-family: monospace;
             order: 2;
         }
+        .audio {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            background-color: white;
+            font-family: monospace;
+            color: #FF5F9E;
+            width: 100px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(110%);
+            
+        }
 
         @keyframes fade {
             0% {
@@ -254,12 +275,9 @@
 
     <section class="container-fluid">
         <div class="row-fluid">
-            <div class="col-sm align-self-center">
-                <audio controls autoplay style="
-                    visibility: hidden;
-                    ">
-                    <source src="song.mp3" type="audio/mp3">
-                </audio>
+            <div class="audio">
+                <audio id="mp" src="song.mp3" autoplay loop></audio>
+                <button class="btn" onclick="play()">PLAY</button>
             </div>
             <div class="col-sm">
                 <h1 id="title">My Message</h1>
@@ -276,7 +294,7 @@
 </div>
 
 <script>
-    if(true){
+    function play(){
         let audio = document.getElementById("mp");
         audio.play();
     }
